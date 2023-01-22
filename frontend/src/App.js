@@ -1,12 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Dashboard from "./Components/Pages/Dashboard/Dashboard";
+import Login from "./Components/Pages/Login/Login";
+import Register from "./Components/Pages/Register/Register";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-        Hellow
-    </div>
+    <>
+      <BrowserRouter>
+        {/* <Dashboard /> */}
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
-}
+};
 
 export default App;
