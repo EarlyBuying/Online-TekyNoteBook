@@ -22,7 +22,7 @@ const Login = () => {
           <div className="login_links">
             <Link className="linkTo">Forget Password</Link>
 
-            <Link className="linkTo">Register here</Link>
+            <Link to='/register' className="linkTo">Register here</Link>
           </div>
           <button>Login</button>
         </form>
