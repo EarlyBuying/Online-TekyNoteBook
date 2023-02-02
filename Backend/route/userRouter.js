@@ -4,7 +4,7 @@ const jwt = require("jsonwebtoken");
 
 const User = require("../models/User");
 
-router.post("/", async (req, res) => {
+router.post("/register", async (req, res) => {
   try {
     //get value from frontend
     const { email, password, passwordVerify } = req.body;
@@ -40,10 +40,21 @@ router.post("/", async (req, res) => {
     });
 
     const savedUser = await newUser.save();
-    console.log(savedUser);
+    const token = jwt.sign(
+      {
+        user: savedUser._id,
+      },
+      process.env.JWT_SECRET
+    );
+    res
+      .cookie("token", token, {
+        httpOnly: true,
+      })
+      .send();
     return res.status(200).json({ successMessage: "You have been registered" });
   } catch (error) {
     console.log(error);
+    res.status(500).send();
   }
 });
 
@@ -83,7 +94,7 @@ router.post("/login", async (req, res) => {
       process.env.JWT_SECRET
     );
     console.log(token);
-//token convert to cookie and send
+    //token convert to cookie and send
     res
       .cookie("token", token, {
         httpOnly: true,
@@ -92,6 +103,15 @@ router.post("/login", async (req, res) => {
   } catch (error) {
     console.log(error);
   }
+});
+
+router.get("/logout", (req, res) => {
+  res
+    .cookie("token", "", {
+      httpOnly: true,
+      expires: new Date(0),
+    })
+    .send();
 });
 
 module.exports = router;

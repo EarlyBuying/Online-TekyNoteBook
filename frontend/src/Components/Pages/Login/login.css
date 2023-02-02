@@ -152,7 +152,6 @@ form .inputBox input:focus ~ span {
 }
 form .login_links {
   display: flex;
-  justify-content: space-between;
 }
 
 form .login_links .linkTo {
@@ -163,8 +162,7 @@ form .login_links .linkTo {
   text-decoration: none;
 }
 
-form .login_links .linkTo:hover,
-form .login_links .linkTo:nth-child(2) {
+form .login_links .linkTo:hover {
   color: #45f3ff;
 }
 
@@ -191,6 +189,30 @@ button:hover {
   padding: 11px 25px;
   width: 100px;
   margin-top: 10px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login_container  .log_back_btn {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  font-weight: 600;
+  background-color: #5aa8ad;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #000000;
+}
+.login_container .log_back_btn:hover {
+  bottom: none;
+  border: none;
+  outline: none;
+  background: #59696b56;
+  color: #45f3ff;
   font-weight: 600;
   border-radius: 4px;
   cursor: pointer;
