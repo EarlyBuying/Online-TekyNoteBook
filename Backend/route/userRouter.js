@@ -49,6 +49,8 @@ router.post("/register", async (req, res) => {
     res
       .cookie("token", token, {
         httpOnly: true,
+        secure: true,
+        sameSite: "none",
       })
       .send();
     return res.status(200).json({ successMessage: "You have been registered" });
@@ -98,6 +100,8 @@ router.post("/login", async (req, res) => {
     res
       .cookie("token", token, {
         httpOnly: true,
+        secure: true,
+        sameSite: "none",
       })
       .send();
   } catch (error) {
@@ -112,6 +116,18 @@ router.get("/logout", (req, res) => {
       expires: new Date(0),
     })
     .send();
+});
+
+router.get("/loggedIn", (req, res) => {
+  try {
+    const token = req.cookies.token;
+    if (!token) return res.json(false);
+
+    jwt.verify(token, process.env.JWT_SECRET);
+    res.send(true);
+  } catch (error) {
+    res.json(false);
+  }
 });
 
 module.exports = router;

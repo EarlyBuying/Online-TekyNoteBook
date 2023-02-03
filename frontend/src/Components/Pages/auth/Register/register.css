@@ -1,12 +1,12 @@
-.login_container {
+.register_container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 93vh;
   background-color: rgb(3, 22, 22);
 }
-.login_container h1 {
+.register_container h1 {
   font-size: 3rem;
   font-family: "Merienda", sans-serif;
   margin: 1rem auto;
@@ -36,16 +36,16 @@
   }
 }
 
-.login_container .login_box {
+.register_container .register_box {
   position: relative;
   width: 380px;
   background-color: beige;
-  height: 420px;
+  height: 450px;
   background-color: #1c1c1c;
   border-radius: 8px;
   overflow: hidden;
 }
-.login_container .login_box::before {
+.register_container .register_box::before {
   content: "";
   position: absolute;
   top: -50%;
@@ -56,7 +56,7 @@
   transform-origin: bottom right;
   animation: animate 2s linear infinite;
 }
-.login_container .login_box::after {
+.register_container .register_box::after {
   content: "";
   position: absolute;
   top: -50%;
@@ -78,7 +78,7 @@
   }
 }
 
-.login_container .login_box form {
+.register_container .register_box form {
   position: absolute;
   inset: 2px;
   border-radius: 8px;
@@ -88,7 +88,7 @@
   display: flex;
   flex-direction: column;
 }
-.login_box form h2 {
+.register_box form h2 {
   color: #45f3ff;
   font-size: 30px;
   font-weight: 700;
@@ -97,7 +97,7 @@
   letter-spacing: 0.1rem;
   margin-bottom: 10px;
 }
-.login_box form .inputBox {
+.register_box form .inputBox {
   position: relative;
   width: 280px;
   margin-top: 30px;
@@ -150,11 +150,12 @@ form .inputBox input:focus ~ span {
 .inputBox input:focus ~ i {
   height: 44px;
 }
-form .login_links {
+form .register_links {
   display: flex;
+  justify-content: space-between;
 }
 
-form .login_links .linkTo {
+form .register_links .linkTo {
   margin: 10px 0;
   font-size: 0.8em;
   font-weight: 500;
@@ -162,7 +163,8 @@ form .login_links .linkTo {
   text-decoration: none;
 }
 
-form .login_links .linkTo:hover {
+form .register_links .linkTo:hover,
+form .register_links .linkTo:nth-child(2) {
   color: #45f3ff;
 }
 
@@ -193,8 +195,7 @@ button:hover {
   border-radius: 4px;
   cursor: pointer;
 }
-
-.login_container  .log_back_btn {
+.register_container .regi_back_btn {
   margin-top: 20px;
   display: flex;
   align-items: center;
@@ -207,7 +208,7 @@ button:hover {
   text-decoration: none;
   color: #000000;
 }
-.login_container .log_back_btn:hover {
+.register_container .regi_back_btn:hover {
   bottom: none;
   border: none;
   outline: none;
