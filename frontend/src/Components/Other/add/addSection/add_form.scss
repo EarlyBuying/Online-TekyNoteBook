@@ -1,0 +1,66 @@
+.add {
+    flex: 5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+  
+    .add_section {
+      width: 90%;
+      margin-top: 20px;
+      background-color: #042c2c42;
+      height: 70vh;
+      border: 1px solid black;
+      padding: 5px;
+      position: relative;
+  
+      .adding_btn {
+        height: 42px;
+        position: absolute;
+        width: 100px;
+        right: 16px;
+        background-color: aliceblue;
+      }
+      .adding_btn:hover {
+        background-color: aqua;
+        color: rgb(19, 19, 17);
+        font-size: 15px;
+      }
+  
+      .adding_form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+  
+        .adding_input_col {
+          display: flex;
+          flex-direction: column;
+          margin-top: 10px;
+  
+          .input_lable {
+            font-size: 17px;
+            font-weight: 500;
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+              sans-serif;
+            margin-bottom: 5px;
+          }
+          textarea {
+            padding: 0 10px;
+          }
+        }
+  
+        .col1,
+        .col2 {
+          width: 25%;
+  
+          .input1 {
+            height: 22px;
+            color: black;
+            font-size: 15px;
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+  }
+  

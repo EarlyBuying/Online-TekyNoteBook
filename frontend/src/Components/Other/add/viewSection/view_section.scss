@@ -1,0 +1,25 @@
+.view_Section {
+  margin: 10px 45px;
+
+  .item_details {
+    width: 66rem;
+    background-color: rgb(92, 132, 184);
+    height: 150px;
+    overflow: scroll;
+    margin-bottom: 10px;
+    overflow-x: hidden;
+
+    .item_date {
+      font-size: 15px;
+    }
+    .item_Header {
+      font-size: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .item_details::-webkit-scrollbar {
+    color: #a80808;
+  }
+}
