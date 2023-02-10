@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./view_section.scss";
-import axios, { all } from "axios";
+import axios from "axios";
 
 const View_Section = () => {
   const [allnotes, setAllNotes] = useState([]);

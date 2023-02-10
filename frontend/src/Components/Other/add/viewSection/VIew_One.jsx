@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const VIew_One = () => {
-  return (
-    <div>VIew_One</div>
-  )
-}
+  return <div>VIew_One</div>;
+};
 
-export default VIew_One
+export default VIew_One;

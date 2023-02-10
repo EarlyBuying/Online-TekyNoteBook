@@ -5,12 +5,8 @@ import View_Section from "./viewSection/View_Section";
 const Add = () => {
   return (
     <div add_main>
-      <div className="addingPart">
-        <Add_form />
-      </div>
-      <div className="ViewingPart">
-        <View_Section />
-      </div>
+      <Add_form />
+      <View_Section />
     </div>
   );
 };
