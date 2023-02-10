@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const CustomerSchema = new mongoose.Schema({
   date: {
-    type: Date,
+    type: String,
   },
   header: {
     type: String,
