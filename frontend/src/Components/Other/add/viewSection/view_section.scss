@@ -1,22 +1,45 @@
 .view_Section {
   margin: 10px 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
 
   .item_details {
     width: 66rem;
     background-color: rgb(92, 132, 184);
     height: 150px;
-    overflow: scroll;
+    border: 1px solid wheat;
+    word-wrap: break-word; 
     margin-bottom: 10px;
-    overflow-x: hidden;
+    overflow: auto;
+    position: relative;
+
+    .show_btn {
+      position: absolute;
+      right: 0px;
+      background-color: rgba(79, 172, 248, 0.678);
+      color: wheat;
+      border: 1px solid wheat;
+    }
 
     .item_date {
       font-size: 15px;
+      margin: 10px 15px;
     }
     .item_Header {
       font-size: 25px;
+      margin: 20px;
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+    
+    p {
+      margin: 0 20px;
+      text-align: justify;
+      text-indent: 50px;
+      text-overflow: clip;
     }
   }
   .item_details::-webkit-scrollbar {

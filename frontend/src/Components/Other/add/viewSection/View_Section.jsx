@@ -5,46 +5,16 @@ const View_Section = () => {
   return (
     <div className="view_Section">
       <div className="item_details">
+        <button className="show_btn">SHOW</button>
         <div className="view_header">
           <div className="item_date">10/15/2020</div>
-          <div className="item_Header">HeadHeaderHeaderHeaderHeaderHeaderer</div>
-        </div>
-        <div className="image">image</div>
-        <div className="item_textarea">
-          hgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfsk
-          fksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjf
-          kjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfk
-          hsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgs
-          dkjskdhgfdsjfskfksdjsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-          kjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfk
-          hsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfk
-          hsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgs
-          dkjskdhgfdsjfskfksdjsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-          fkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsasssssssssdkjskdjskdhgfdsjfskfksdjfkjsdfkhsdkfgs
-          dkjskdhgfdsjfskfksdjsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-          fkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsasssssssssdkjskd
-          fkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsasssssssssdkjskd
-        </div>
-      </div>
-      <div className="item_details">
-        <div className="item_date">date</div>
-        <div className="item_Header">Header</div>
-        <div className="image">image</div>
-        <div className="item_textarea">
-          hgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfsk
-          fksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjf
-          kjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfk
-          hsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgs
-          dkjskdhgfdsjfskfksdjsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-          kjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfk
-          hsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfk
-          hsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgs
-          dkjskdhgfdsjfskfksdjsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-          fkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsasssssssssdkjskdjskdhgfdsjfskfksdjfkjsdfkhsdkfgs
-          dkjskdhgfdsjfskfksdjsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-          fkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsasssssssssdkjskd
-          fkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsasssssssssdkjskd
-        </div>
+          <div className="item_Header">
+            HeadHeaderHeaderHeaderHeaderHeaderer
+          </div>
+        </div> 
+        <p className="item_textarea">
+          hgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaakjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsasssssssssdkjskdjskdhgfdsjfskfksdjfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsasssssssssdkjskdfkjsdfkhsdkfgsdkjskdhgfdsjfskfksdjfkjsdfkhsdkfgsasssssssssdkjskd
+        </p>
       </div>
     </div>
   );

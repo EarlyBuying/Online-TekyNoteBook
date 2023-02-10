@@ -5,11 +5,12 @@ const router = express.Router();
 
 router.post("/", auth, async (req, res) => {
   try {
-    const { name, age } = req.body;
+    const { date, header, notes } = req.body;
 
     const newCustomer = new Customers({
-      name,
-      age,
+      date,
+      header,
+      notes,
     });
 
     const saveCustomer = await newCustomer.save();
